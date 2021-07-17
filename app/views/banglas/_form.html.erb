@@ -1,0 +1,27 @@
+<%= form_with(model: bangla) do |form| %>
+  <% if bangla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bangla.errors.count, "error") %> prohibited this bangla from being saved:</h2>
+
+      <ul>
+        <% bangla.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :khawa %>
+    <%= form.text_field :khawa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mangso %>
+    <%= form.number_field :mangso %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

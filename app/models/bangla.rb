@@ -1,0 +1,2 @@
+class Bangla < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module BanglasHelper
+end
